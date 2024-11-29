@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  font-family: "Roboto", sans-serif;
 }
 body{
-  height: 2300px;
+  height: 100%;
+  min-height: 2000px;
   width: 100%;
   background-color: #171F12;
-  background-image: url(background.png);
+  /* background-image: url(background.png); */
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
@@ -102,11 +103,99 @@ ul li i{
   color: rgb(0, 175, 58);
 }
 
-/* #section{
-  height: 1900px;
+main{
+  height: 100%;
   width: 100%;
-  /* background-image: url(background-image.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-} */
+}
+#home{
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+}
+#home #left-part{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 60px;
+  padding-top: 120px;
+}
+.headings h1{
+  font-size: 90px;
+}
+.headings p{
+  font-size: 18px;
+}
+#buttons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.explore{
+  padding: 10px 40px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+}
+.play{
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50px;
+}
+#home #right-part{
+  width: 40%;
+  height: 100%;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  height: 80%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.169);
+  backdrop-filter: blur(10px);
+}
+.card img{
+  /* background-color: transparent; */
+  margin-top: -80px;
+  width: 90%;
+  object-fit: cover;
+}
+.card-content{
+  width: 100%;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background-color: transparent; */
+}
+.card-content p{
+  font-size: 14px;
+}
+.card-content h3{
+  font-size: 28px;
+  font-weight: 500;
+}
+.card-content .buy-now{
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+}
+
