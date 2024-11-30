@@ -1,68 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Practics</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Practics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div id="image">
-      <img src="logo1.png" alt="logo image">
-      <h2>Planto</h2>
-    </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li id="courses"><a href="#">Plant Type <i class="fa-solid fa-caret-down"></i></a>
-        
-        <div id="dropdown-list">
-          <ul>
-            <li><a href="">Alpines</a></li>
-            <li><a href="">Bulbs</a></li>
-            <li><a href="">Climbers</a></li>
-            <li><a href="">Aquatic</a></li>
-          </ul>
-        </div>
-      </li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <div id="icons">
-      <i class="fa-solid fa-heart"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-    </div>
-  </header>
-  <main>
-    <section id="home">
-      <div id="left-part">
-        <div class="headings">
-          <h1>Breath Natural</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
-        <div id="buttons">
-          <button class="explore">Explore</button>
-          <button class="play"><i class="fa-solid fa-play"></i></button>
-          <p>Live Demo....</p>
-        </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin=""
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="image">
+        <img src="logo1.png" alt="logo image" />
+        <h2>Planto</h2>
       </div>
-      <div id="right-part">
-        <div class="card">
-          <img src="plant.png" alt="plant">
-          <div class="card-content">
-            <p>Trendy House Plant</p>
-            <h3>Calathea plant</h3>
-            <button class="buy-now">Buy Now</button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li id="courses">
+          <a href="#">Plant Type <i class="fa-solid fa-caret-down"></i></a>
+
+          <div id="dropdown-list">
+            <ul>
+              <li><a href="">Alpines</a></li>
+              <li><a href="">Bulbs</a></li>
+              <li><a href="">Climbers</a></li>
+              <li><a href="">Aquatic</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div id="icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div id="section1">
+          <div id="left-part">
+            <div class="headings">
+              <h1>Breath Natural</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod <br />
+                tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div id="buttons">
+              <button class="explore btn-hover">Explore</button>
+              <button class="play btn-hover">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <p>Live Demo....</p>
+            </div>
+            <div id="review-card">
+              <div id="inner-content">
+                <div id="top-content">
+                  <img src="alina.png" alt="" />
+                  <div id="name">
+                    <h3>Alina Patel</h3>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star half">&#9733;</span>
+                    </div>
+                  </div>
+                </div>
+                <div id="bottom-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, od
+                    tempor incididunt...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="right-part">
+            <div class="card">
+              <img src="plant.png" alt="plant" />
+              <div class="card-content">
+                <p>Trendy House Plant</p>
+                <h3>Calathea plant</h3>
+                <button class="buy-now btn-hover">Buy Now</button>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-</body>
+        <div id="section2">
+          <div id="heading-part">
+            <img src="Vector 3.png" alt="" class="left" />
+            <h1>Our Trendy Plants</h1>
+            <img src="Vector 3.png" alt="" class="right" />
+          </div>
+          <div id="product-detail-card1">
+            <div class="left-part">
+              <img src="plant1.png" alt="" />
+            </div>
+            <div class="right-part">
+              <h2>For Small Decs Ai Plat</h2>
+              <p>
+                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <h2>Rs. 599/-</h2>
+              <button class="explore btn-hover">Explore</button>
+            </div>
+          </div>
+          <div id="product-detail-card2">
+            <div class="left-part">
+              <h2>For Small Decs Ai Plat</h2>
+              <p>
+                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <h2>Rs. 599/-</h2>
+              <button class="explore btn-hover">Explore</button>
+            </div>
+            <div class="right-part">
+              <img src="plant2.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="section3">
+          <div id="heading-part">
+            <img src="Vector 3.png" alt="" class="left" />
+            <h1>Our Selling Plants</h1>
+            <img src="Vector 3.png" alt="" class="right" />
+          </div>
+          <div id="products">
+            <div class="product-card">
+              <div id="plant-img"><img src="plant3.png" alt="plant" /></div>
+              <div class="card-content">
+                <h3>Calathea plant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Rs. 309/-</h3>
+              </div>
+              <div id="add-to-cart"><i class="fa-solid fa-heart"></i></div>
+            </div>
+            <div class="product-card">
+              <div id="plant-img"><img src="plant5.png" alt="plant" /></div>
+              <div class="card-content">
+                <h3>Calathea plant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Rs. 309/-</h3>
+              </div>
+              <div id="add-to-cart"><i class="fa-solid fa-heart"></i></div>
+            </div>
+            <div class="product-card">
+              <div id="plant-img"><img src="plant1.png" alt="plant" /></div>
+              <div class="card-content">
+                <h3>Calathea plant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Rs. 309/-</h3>
+              </div>
+              <div id="add-to-cart"><i class="fa-solid fa-heart"></i></div>
+            </div>
+            <div class="product-card">
+              <div id="plant-img"><img src="plant4.png" alt="plant" /></div>
+              <div class="card-content">
+                <h3>Calathea plant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Rs. 309/-</h3>
+              </div>
+              <div id="add-to-cart"><i class="fa-solid fa-heart"></i></div>
+            </div>
+            <div class="product-card">
+              <div id="plant-img"><img src="plant2.png" alt="plant" /></div>
+              <div class="card-content">
+                <h3>Calathea plant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Rs. 309/-</h3>
+              </div>
+              <div id="add-to-cart"><i class="fa-solid fa-heart"></i></div>
+            </div>
+            <div class="product-card">
+              <div id="plant-img"><img src="plant.png" alt="plant" /></div>
+              <div class="card-content">
+                <h3>Calathea plant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h3>Rs. 309/-</h3>
+              </div>
+              <div id="add-to-cart"><i class="fa-solid fa-heart"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
