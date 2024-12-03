@@ -144,12 +144,13 @@ main {
   padding: 60px;
   padding-top: 120px;
   padding-bottom: 0px;
+  position: relative;
 }
 .headings h1 {
-  font-size: 90px;
+  font-size: 6.5vw;
 }
 .headings p {
-  font-size: 18px;
+  font-size: 1.2vw;
 }
 #buttons {
   display: flex;
@@ -174,18 +175,21 @@ main {
   border-radius: 50px;
 }
 #review-card {
-  width: 250px;
-  height: 140px;
+  width: 20vw;
+  height: 11vw;
   margin-top: 50px;
   margin-left: 40px;
-  padding: 20px 15px;
-  border-radius: 20px;
+  padding: 1.8vw 1.2vw;
+  border-radius: 2.5vw;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(90px);
 }
 #inner-content {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 #top-content {
   width: 100%;
@@ -204,7 +208,7 @@ main {
   align-items: center;
 }
 #name h3 {
-  font-size: 16px;
+  font-size: 1.4vw;
 }
 .star-rating {
   display: flex;
@@ -212,7 +216,7 @@ main {
 }
 
 .star {
-  font-size: 14px;
+  font-size: 1.4vw;
   color: #ddd; /* Default color for empty stars */
   position: relative;
 }
@@ -234,66 +238,76 @@ main {
   align-items: center;
 }
 #bottom-content p {
-  font-size: 12px;
+  font-size: .9vw;
 }
 
 #home #right-part {
   width: 40%;
   height: 100%;
-  padding-top: 30px;
+  padding: 0px 20px;
+  padding-top: 2.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .card {
-  height: 80%;
-  width: 65%;
+  height: 30vw;
+  width: 24vw;
   display: flex;
-  gap: 30px;
+  gap: 1.5vw;
   align-items: center;
   flex-direction: column;
   border: none;
-  border-radius: 50px;
+  border-radius: 3vw;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(90px);
   position: relative;
 }
+#card-img{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+}
 .card i {
-  font-size: 18px;
+  font-size: 1.5vw;
   position: absolute;
   right: 7%;
-  bottom: 25%;
+  bottom: 14%;
 }
 .card img {
   /* background-color: transparent; */
   margin-top: -80px;
-  width: 80%;
+  width: 90%;
   object-fit: cover;
 }
 .card-content {
   width: 100%;
-  padding: 30px 25px;
+  padding: 1vw 1.5vw;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.1vw;
   /* background-color: transparent; */
 }
 .card-content p {
-  font-size: 14px;
+  font-size: 1.3vw;
 }
 .card-content h3 {
-  font-size: 28px;
+  font-size: 2vw;
   font-weight: 500;
 }
 .card-content .buy-now {
-  width: 150px;
-  height: 50px;
-  font-size: 18px;
+  width: 11vw;
+  height: 3vw;
+  font-size: 1.4vw;
   background-color: transparent;
   border: 1px solid white;
   color: white;
   border-radius: 10px;
 }
+
 
 /* section2 ka code */
 
@@ -310,7 +324,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0px;
 }
 #heading-part h1 {
   font-size: 50px;
@@ -328,7 +341,7 @@ main {
   height: 55vh;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  border-radius: 100px;
+  border-radius: 8vw;
   display: flex;
   margin-top: 120px;
 }
@@ -341,7 +354,7 @@ main {
 }
 
 #product-detail-card1 .left-part img {
-  width: 85%;
+  width: 70%;
   margin-top: -70px;
 }
 
@@ -363,7 +376,7 @@ main {
   height: 55vh;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  border-radius: 100px;
+  border-radius: 8vw;
   display: flex;
   margin-top: 130px;
 }
@@ -377,8 +390,8 @@ main {
 }
 
 #product-detail-card2 .right-part img {
-  width: 85%;
-  margin-top: -130px;
+  width: 55%;
+  margin-top: -100px;
 }
 
 #product-detail-card2 .left-part {
@@ -420,7 +433,7 @@ main {
   align-items: center;
   flex-direction: column;
   border: none;
-  border-radius: 50px;
+  border-radius: 5vw;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(90px);
   margin-top: 70px;
@@ -431,11 +444,11 @@ main {
   height: 40%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .product-card img {
-  margin-top: -40px;
-  width: 100%;
-  object-fit: cover;
+  margin-top: 0px;
+  width: 80%;
 }
 .product-card .card-content {
   width: 100%;
@@ -472,6 +485,9 @@ main {
   color: white;
 }
 
+
+
+
 @media (max-width: 1024px){
   header{
     padding: 20px;
@@ -489,15 +505,88 @@ main {
   #icons i{
     font-size: 14px;
   }
+  #section1{
+    height: 70vh;
+  }
+  .card{
+    width: 246px;
+    height: 307px;
+  }
+  .card i{
+    font-size: 15px;
+  }
+  .card-content{
+    padding: 10px 15px;
+    gap: 12px;
+  }
+  .card-content p {
+    font-size: 14px;
+  }
+  .card-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .card-content .buy-now {
+    width: 112px;
+    height: 30px;
+    font-size: 14px;
+  }
+  #section1 #left-part{
+    padding: 11vw 6vw 0px;
+  }
+  .explore{
+    font-size: 14px;
+    padding: 8px 34px;
+  }
+  .play{
+    width: 30px;
+    height: 30px;
+  }
+  #buttons p{
+    font-size: 14px;
+  }
+  #home #right-part{
+    align-items: flex-start;
+    padding-top: 13vw;
+  }
+  #product-detail-card1{
+    height: 35vw;
+    align-items: center;
+  }
+  #product-detail-card1 .left-part img{
+    width: 85%;
+  }
+  #product-detail-card1 .right-part h2 {
+    font-size: 3.2vw;
+  }
+  #product-detail-card1 .right-part p {
+    font-size: 1.5vw;
+  }
+
+  #product-detail-card2{
+    height: 35vw;
+    align-items: center;
+  }
+  
+  #product-detail-card2 .right-part img{
+    margin-top: -50px;
+    width: 60%;
+  }
+  #product-detail-card2 .left-part h2 {
+    font-size: 3.2vw;
+  }
+  #product-detail-card2 .left-part p {
+    font-size: 1.5vw;
+  }
 }
 
 @media (max-width: 768px){
   body{
     background-image: url(images/mobbackground.png);
-    background-size: cover;
+    background-size: auto;
     background-position: top;
     background-repeat: no-repeat;
-    overflow: hidden;
+    backdrop-filter: blur(2px);
   }
   header ul{
     display: none;
@@ -506,7 +595,149 @@ main {
   #icons .menu{
     display: block;
   }
+
+  #section1{
+    flex-direction: column;
+    gap: 90px;
+    height: fit-content;
+  }
+  #section1 #left-part{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+  }
+  .headings h1 {
+    font-size: 11vw;
+  }
+  .headings p {
+    font-size: 2.1vw;
+  }
+  #review-card {
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    width: 152px;
+    height: 84px;
+  }
+  #top-content img {
+    height: 35px;
+  }
+  #name h3 {
+    font-size: 10px;
+  }
+  .star{
+    font-size: 10px;
+  }
+  #bottom-content p {
+    font-size: 7px;
+  }
+  #home #right-part{
+    width: 100%;
+    height: fit-content;
+  }
+  .card{
+    width: 336px;
+    height: 387px;
+    border-radius: 8vw;
+    background-color: #171f12b4;
+  }
+  .card-content{
+    align-items: center;
+    text-align: center;
+  }
+  .card-content p {
+    font-size: 20px;
+  }
+  .card-content h3 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .card-content .buy-now{
+    width: 162px;
+    height: 60px;
+    font-size: 18px;
+  }
+  #heading-part{
+    justify-content: space-evenly;
+  }
+  #heading-part h1 {
+    font-size: 7vw;
+  }
+  #heading-part .left {
+    margin-right: -40px;
+    width: 12vw;
+  }
+  #heading-part .right {
+    margin-left: -40px;
+    width: 12vw;
+  }
+  #product-detail-card1{
+    flex-direction: column;
+    width: 100%;
+    height: 90vw;
+    margin-top: 140px;
+    gap: 15px;
+    background-color: rgba(86, 86, 86, 0.4);
+    border: 1px solid #ffffff43;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  #product-detail-card1 .left-part {
+    width: 100%;
+    height: 50%;
+  }
+  #product-detail-card1 .left-part img{
+    width: 80%;
+    height: auto;
+  }
+  #product-detail-card1 .right-part {
+    width: 100%;
+    height: 50%;
+    padding: 20px 60px;
+  }
+  #product-detail-card1 .right-part h2 {
+    font-size: 4.5vw;
+  }
+  #product-detail-card1 .right-part p {
+    font-size: 2.2vw;
+  }
+
+
+  #product-detail-card2{
+    flex-direction: column;
+    width: 100%;
+    height: 90vw;
+    margin-top: 140px;
+    gap: 15px;
+    background-color: rgba(86, 86, 86, 0.4);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border: 1px solid #ffffff43;
+  }
+  #product-detail-card2 .right-part {
+    width: 100%;
+    height: 50%;
+  }
+  #product-detail-card2 .right-part img{
+    width: 50%;
+    height: auto;
+    margin-top: -30px;
+  }
+  #product-detail-card2 .left-part {
+    width: 100%;
+    height: 50%;
+    padding: 20px 60px;
+  }
+  #product-detail-card2 .left-part h2 {
+    font-size: 4.5vw;
+  }
+  #product-detail-card2 .left-part p {
+    font-size: 2.2vw;
+  }
 }
+
+
+
 @media (max-width: 480px){
   header{
     padding: 10px 10px;
@@ -515,6 +746,97 @@ main {
     padding: 10px 10px;
     gap: 10px;
   }
+  #section1{
+    gap: 45vw;
+  }
+  #section1 #left-part{
+    align-items: center;
+  }
+  .headings h1 {
+    font-size: 12vw;
+  }
+  .headings p{
+    text-align: center;
+    font-size: 2.4vw;
+  }
+  #review-card{
+    right: 5%;
+    top: 80%;
+  }
+  .card{
+    width: 306px;
+    height: 357px;
+    border-radius: 10vw;
+    background-color: #171f12b4;
+  }
+  .card-content p {
+    font-size: 18px;
+  }
+  .card-content h3 {
+    font-size: 28px;
+  }
+  .card-content .buy-now{
+    width: 142px;
+    height: 50px;
+    font-size: 16px;
+  }
+  #product-detail-card1{
+    height: 110vw;
+  }
+  #product-detail-card1 .left-part img{
+    margin-top: 0px;
+  }
+  #product-detail-card1 .right-part {
+    padding: 20px 10px;
+    text-align: center;
+    align-items: center;
+  }
+  #product-detail-card1 .right-part h2 {
+    font-size: 5vw;
+  }
+  #product-detail-card1 .right-part p {
+    font-size: 2.5vw;
+  }
+
+  #product-detail-card2{
+    height: 110vw;
+  }
+  #product-detail-card2 .right-part img{
+    margin-top: 0px;
+  }
+  #product-detail-card2 .left-part {
+    padding: 20px 10px;
+    text-align: center;
+    align-items: center;
+  }
+  #product-detail-card2 .left-part h2 {
+    font-size: 5vw;
+  }
+  #product-detail-card2 .left-part p {
+    font-size: 2.5vw;
+  }
+
+  .product-card{
+    height: 380px;
+    width: 330px;
+    border-radius: 8vw;
+    gap: 30px;
+  }
+  .product-card .card-content p {
+    font-size: 12px;
+  }
+  .product-card .card-content h3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  #add-to-cart {
+    width: 30px;
+    height: 30px;
+  }
+  #add-to-cart i {
+    font-size: 14px;
+    color: white;
+  }  
 }
 
 
